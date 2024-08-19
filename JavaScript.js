@@ -1,7 +1,7 @@
 ////////////////////////////EJ1//////////////////////////////////
 function ParOImpar(numero) {
     const resultado = numero % 2 === 0 ? `${numero} es par` : `${numero} es impar`;
-    MostrarResultado(resultado);
+    Resultado(resultado);
 }
 
 ////////////////////////////EJ2//////////////////////////////////
@@ -14,13 +14,13 @@ function CompararNumeros(num1, num2) {
     } else {
         resultado = `${num1} y ${num2} son iguales`;
     }
-    MostrarResultado(resultado);
+    Resultado(resultado);
 }
 
 ////////////////////////////EJ3//////////////////////////////////
 function MultiploCinco(numero) {
     const resultado = numero % 5 === 0 ? `${numero} es múltiplo de 5` : `${numero} no es múltiplo de 5`;
-    MostrarResultado(resultado);
+    Resultado(resultado);
 }
 
 ////////////////////////////EJ4//////////////////////////////////
@@ -29,7 +29,7 @@ function ImpNumerosHasta(numero) {
     for (let i = 0; i <= numero; i++) {
         resultados.push(i);
     }
-    MostrarResultado(resultados.join(', '));
+    Resultado(resultados.join(', '));
 }
 
 ////////////////////////////EJ5//////////////////////////////////
@@ -38,12 +38,12 @@ function ImpPalabraRepetida(palabra, veces) {
     for (let i = 0; i < veces; i++) {
         resultados.push(palabra);
     }
-    MostrarResultado(resultados.join(', '));
+    Resultado(resultados.join(', '));
 }
 
 ////////////////////////////EJ6//////////////////////////////////
 function ImpValoresArray(array) {
-    MostrarResultado(array.join(', '));
+    Resultado(array.join(', '));
 }
 
 ////////////////////////////EJ7//////////////////////////////////
@@ -54,7 +54,7 @@ function ImpNoQuintaPosicion(array) {
             resultados.push(array[i]);
         }
     }
-    MostrarResultado(resultados.join(', '));
+    Resultado(resultados.join(', '));
 }
 
 ////////////////////////////EJ8//////////////////////////////////
@@ -63,15 +63,15 @@ function MultiplicarArrayPorNumero(array, numero) {
     for (let i = 0; i < array.length; i++) {
         resultados.push(array[i] * numero);
     }
-    MostrarResultado(resultados.join(', '));
+    Resultado(resultados.join(', '));
 }
 
 ////////////////////////////RESULTADO//////////////////////////////////
-function MostrarResultado(resultado) {
-    const divResultados = document.getElementById('resultados');
+function Resultado(resultado) {
+    const Resultados = document.getElementById('resultados');
     const p = document.createElement('p');
     p.textContent = resultado;
-    divResultados.appendChild(p);
+    Resultados.appendChild(p);
 }
 
 ////////////////////////////LLAMADO DE FUNCIONES/////////////////////////////
